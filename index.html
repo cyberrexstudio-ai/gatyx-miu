@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>GATYX MIU | Métodos Digitales</title>
+
+<style>
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Arial, sans-serif;
+}
+
+body{
+  background:#0e0e0e;
+  color:white;
+}
+
+/* HEADER */
+header{
+  background:black;
+  padding:15px 40px;
+  border-bottom:1px solid #222;
+}
+
+.logo{
+  display:flex;
+  align-items:center;
+  gap:10px;
+}
+
+.logo img{
+  width:50px;
+  height:50px;
+  border-radius:50%;
+  border:2px solid #ff1a1a;
+  object-fit:cover;
+}
+
+.logo h1{
+  color:#ff1a1a;
+  font-size:22px;
+  letter-spacing:2px;
+}
+
+/* HERO */
+.hero{
+  text-align:center;
+  padding:80px 20px;
+  background:radial-gradient(circle,#2a0000 0%, #0e0e0e 70%);
+}
+
+.hero img{
+  width:130px;
+  height:130px;
+  border-radius:20px;
+  border:3px solid #ff1a1a;
+  margin-bottom:20px;
+  object-fit:cover;
+}
+
+.hero h2{
+  font-size:38px;
+  color:#ff1a1a;
+  margin-bottom:15px;
+}
+
+.hero p{
+  max-width:700px;
+  margin:auto;
+  color:#ccc;
+  font-size:18px;
+  margin-bottom:30px;
+}
+
+/* BOTÓN */
+.btn{
+  display:inline-block;
+  background:#ff1a1a;
+  padding:12px 24px;
+  border-radius:10px;
+  text-decoration:none;
+  color:white;
+  font-weight:bold;
+  transition:0.3s;
+  position:relative;
+  z-index:5; /* 👈 NUNCA se tapa */
+}
+
+.btn:hover{
+  background:#b30000;
+  transform:scale(1.05);
+  box-shadow:0 0 15px #ff1a1a;
+}
+
+/* SECCIÓN */
+.section{
+  padding:70px 40px;
+}
+
+.section h3{
+  font-size:30px;
+  margin-bottom:30px;
+  border-left:5px solid #ff1a1a;
+  padding-left:15px;
+}
+
+/* CARDS GRID */
+.cards{
+  display:grid;
+  grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+  gap:25px;
+}
+
+/* CARD */
+.card{
+  background:#141414;
+  padding:25px;
+  border-radius:18px;
+  border:1px solid #222;
+  transition:0.4s;
+  position:relative;
+  overflow:hidden;
+}
+
+.card:hover{
+  transform:translateY(-8px);
+  border-color:#ff1a1a;
+  box-shadow:0 0 25px rgba(255,0,0,0.4);
+}
+
+.badge{
+  background:#1f1f1f;
+  color:#ff1a1a;
+  padding:6px 12px;
+  border-radius:20px;
+  font-size:12px;
+  display:inline-block;
+  margin-bottom:12px;
+  border:1px solid #ff1a1a;
+}
+
+.rating{
+  color:gold;
+  margin:10px 0;
+}
+
+.info{
+  color:#bbb;
+  font-size:14px;
+  margin:6px 0;
+}
+
+.seal{
+  margin-top:12px;
+  font-size:13px;
+  color:#ff4d4d;
+}
+
+/* CONTEXTO ELEGANTE (VERSIÓN LIMPIA Y BONITA) */
+.contexto{
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  margin-top: 0;
+  color: #e6e6e6;
+  font-size: 14px;
+  line-height: 1.6;
+  transition: all 0.4s ease;
+  background: rgba(255, 0, 0, 0.06);
+  border-left: 3px solid #ff1a1a;
+  border-radius: 10px;
+  padding: 0 14px;
+}
+
+/* CUANDO PASAS EL MOUSE */
+.card:hover .contexto{
+  max-height: 180px;
+  opacity: 1;
+  margin-top: 15px;
+  padding: 14px;
+}
+.card:hover .contexto{
+  transform:translateY(0);
+}
+
+footer{
+  text-align:center;
+  padding:30px;
+  background:black;
+  border-top:1px solid #222;
+  color:#777;
+  font-size:14px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <div class="logo">
+    <img src="gatito.png.png" alt="Logo">
+    <h1>GATYX MIU</h1>
+  </div>
+</header>
+
+<section class="hero">
+  <img src="gatito.png.png" alt="Logo">
+  <h2>Métodos Reales Para Ganar Dinero Online</h2>
+  <p>Programas digitales verificados para generar ingresos online con métodos reales.</p>
+  <a href="#programas" class="btn">Explorar Métodos</a>
+</section>
+
+<section class="section" id="programas">
+  <h3>Programas Verificados</h3>
+
+  <div class="cards">
+
+    <!-- CARD 1 -->
+    <div class="card">
+      <div class="badge">ALTA CONVERSIÓN</div>
+      <h2>Cómo Atraer el Dinero</h2>
+      <div class="rating">⭐ 5.0 / 5</div>
+      <div class="info">Creador: David Espinosa</div>
+
+      <a href="https://go.hotmart.com/U104686628S?ap=10e2" class="btn" target="_blank">
+        Ver Programa
+      </a>
+
+      <div class="seal">🐱 Recomendado por GATYX MIU</div>
+
+      <div class="contexto">
+        Programa basado en reprogramación mental financiera, eliminación
+        de creencias limitantes y desarrollo de mentalidad de riqueza
+        utilizando principios enseñados por mentores de alto rendimiento.
+      </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="card">
+      <div class="badge">NEGOCIO ONLINE</div>
+      <h2>Cash On Delivery + Facebook Ads</h2>
+      <div class="rating">⭐ 4.7 / 5</div>
+      <div class="info">Creador: Click Marketing Perú</div>
+
+      <a href="https://go.hotmart.com/O104686666G?ap=81a1" class="btn" target="_blank">
+        Ver Programa
+      </a>
+
+      <div class="seal">🐱 Recomendado por GATYX MIU</div>
+
+      <div class="contexto">
+        Curso enfocado en ventas de productos físicos con anuncios en
+        Facebook Ads usando el modelo contra entrega (Cash on Delivery),
+        ideal para empezar a vender sin tienda física.
+      </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="card">
+      <div class="badge">AUTOMATIZACIÓN</div>
+      <h2>Automatización de Redes Sociales</h2>
+      <div class="rating">⭐ 4.2 / 5</div>
+      <div class="info">Creador: Club del Dólar</div>
+
+      <a href="https://go.hotmart.com/X104651684C" class="btn" target="_blank">
+        Ver Programa
+      </a>
+
+      <div class="seal">🐱 Recomendado por GATYX MIU</div>
+
+      <div class="contexto">
+        Programa educativo sobre automatización de redes sociales,
+        creación de sistemas de contenido y monetización automática
+        en plataformas como YouTube y Facebook a largo plazo.
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<footer>
+  © 2026 GATYX MIU | Programas digitales verificados
+</footer>
+<p style="margin-top:10px; font-size:12px; color:#666;">
+Este sitio recomienda programas digitales de terceros. 
+No somos los creadores de los cursos ni garantizamos resultados financieros.
+</p>
+
+</body>
+</html>
